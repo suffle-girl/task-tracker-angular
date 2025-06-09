@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-import { ServerStatusComponent } from './server-status/server-status.component';
-import { TrafficComponent } from './traffic/traffic.component';
-import { TicketsSupportComponent } from './tickets-support/tickets-support.component';
+import { ServerStatusComponent } from './dashboard/server-status/server-status.component';
+import { TrafficComponent } from './dashboard/traffic/traffic.component';
+import { TicketsComponent } from './dashboard/tickets/tickets.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ import { TicketsSupportComponent } from './tickets-support/tickets-support.compo
     HeaderComponent,
     ServerStatusComponent,
     TrafficComponent,
-    TicketsSupportComponent,
+    TicketsComponent,
   ],
 })
 export class AppComponent {}
