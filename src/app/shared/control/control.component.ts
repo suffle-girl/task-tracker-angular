@@ -1,4 +1,6 @@
 import {
+  afterNextRender,
+  afterRender,
   Component,
   contentChild,
   ContentChild,
@@ -34,6 +36,15 @@ export class ControlComponent {
   // >;
   private control =
     contentChild<ElementRef<HTMLInputElement | HTMLTextAreaElement>>('input');
+
+  constructor() {
+    afterRender(() => {
+      console.log('after render');
+    });
+    afterNextRender(() => {
+      console.log('after next render');
+    });
+  }
 
   onClick() {
     console.log('clicked!');
