@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NewTicketComponent } from './new-ticket/new-ticket.component';
 import { Ticket } from './ticket.model';
 import { TicketComponent } from './ticket/ticket.component';
-import { tick } from '@angular/core/testing';
 
 @Component({
   selector: 'app-tickets',
